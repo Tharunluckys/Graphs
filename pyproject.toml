@@ -1,0 +1,21 @@
+[project]
+name = "graphs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Tharunluckys", email = "177476166+Tharunluckys@users.noreply.github.com." }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.2",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.12",
+]
+
+[project.scripts]
+graphs = "graphs:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
